@@ -41,8 +41,8 @@ func createTemporaryAccount() *model.Users {
 	u := model.Users{
 		Id:           rid,
 		RootId:       0,
-		Account:      "iox_" + strconv.FormatInt(rid&0xFFFF, 16),
-		Nick:         "iox_" + strconv.FormatInt(rid&0xFFFF, 16),
+		Account:      "iam26_" + strconv.FormatInt(rid&0xFFFF, 16),
+		Nick:         "iam26_" + strconv.FormatInt(rid&0xFFFF, 16),
 		CountryPhone: "",
 		Password:     0,
 		Salt:         0,
@@ -66,7 +66,7 @@ func (l *GetUserJWTLogic) GetUserJWT(req types.JwtReq, r *http.Request, w http.R
 	//screen.UpdateScreenID()
 	//model.PQ.Model(&screen).Save(&screen)
 	//
-	//ua := model.UserAgent{UserAgent: r.UserAgent()}
+	//ua := model.UsersAgent{UserAgent: r.UserAgent()}
 	//ua.UpdateUserAgentID()
 	//model.PQ.Model(&ua).Save(&ua)
 	//

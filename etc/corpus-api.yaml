@@ -1,13 +1,13 @@
 Name: corpus-api
 Host: 0.0.0.0
-Port: 8889
+Port: 8891
 Timeout: 180000
 MaxBytes: 4777216
 Auth:
-  AccessSecret: 9unsEnK>[N<2D6P[
+  AccessSecret: nE>[N<2DK6P[9uns
   AccessExpire: 7200
 DBPostgresql:
-  Connection: "host=iox10.vm user=postgres password=postgres dbname=iox10 port=5432 sslmode=disable TimeZone=Asia/Shanghai"
+  Connection: "host=docker.vm user=postgres password=postgres dbname=iam26 port=5432 sslmode=disable TimeZone=Asia/Shanghai"
 Redis:
   Addr: "docker.vm:6379"
   Password: ""

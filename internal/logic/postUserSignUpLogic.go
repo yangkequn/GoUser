@@ -8,7 +8,6 @@ import (
 	"strconv"
 	"strings"
 
-	"user/corpus"
 	"user/images"
 	"user/internal/svc"
 	"user/internal/types"
@@ -16,7 +15,6 @@ import (
 
 	"github.com/yangkequn/GoTools"
 	"github.com/zeromicro/go-zero/core/logx"
-	"github.com/zeromicro/go-zero/zrpc"
 )
 
 type PostUserSignUpLogic struct {
@@ -81,10 +79,6 @@ func (l *PostUserSignUpLogic) PostUserSignUp(r *http.Request, w http.ResponseWri
 }
 
 func ConvertTemporaryAccountToFormalAccount(ctx context.Context, svcCtx *svc.ServiceContext, uidTemporary int64, uid int64) {
-
-	client := zrpc.MustNewClient(svcCtx.UserRpc)
-	rpc := corpus.NewRpc(client)
-	rpc.MergeUserTheme(ctx, &corpus.MergeUserThemeRequest{UIdFrom: uidTemporary, UIdTo: uid}, nil)
 
 	SetRootIDOnTemporaryAccount(svcCtx, uidTemporary, uid)
 }

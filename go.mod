@@ -6,6 +6,7 @@ require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/go-redis/redis/v8 v8.11.4
 	github.com/golang/protobuf v1.5.2
+	github.com/lib/pq v1.10.4
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646
 	github.com/spaolacci/murmur3 v1.1.0
 	github.com/yangkequn/GoTools v0.0.7

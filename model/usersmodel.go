@@ -6,6 +6,8 @@ import (
 	"strings"
 	"time"
 
+	_ "github.com/lib/pq"
+
 	"github.com/zeromicro/go-zero/core/stores/builder"
 	"github.com/zeromicro/go-zero/core/stores/sqlc"
 	"github.com/zeromicro/go-zero/core/stores/sqlx"
